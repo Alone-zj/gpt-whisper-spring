@@ -25,6 +25,18 @@ selenium\whisper\spring\logback\jnativehook
 
 ### 使用说明
 
+0 下载模型https://ggml.ggerganov.com/
+
+    WhisperManager
+    //Path path = Path.of(System.getProperty("user.home"), "ggml-model-whisper-base.bin");
+    Path path = Path.of(System.getProperty("user.home"), "ggml-model-whisper-small.bin");
+
+<img src="img/README.assets/image-20241025172441259.png" alt="image-20241025172441259" style="zoom: 67%;" />
+
+将模型放在System.getProperty("user.home")下 一般是C盘登录用户下
+
+<img src="img/README.assets/image-20241025172353674.png" alt="image-20241025172353674" style="zoom:67%;" />
+
 1 设置 Chrome 远程调试端口
  右键点击 Chrome 的快捷方式图标，选择属性
  在目标一栏，最后加上` --remote-debugging-port=9222`注意要用空格隔开
@@ -62,7 +74,7 @@ public interface AppConfig {
 
 
 
-最终效果
+### 最终效果
 
 ![demo2](img/README.assets/demo2.gif)
 
