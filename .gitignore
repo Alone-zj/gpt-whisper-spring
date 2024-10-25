@@ -29,10 +29,12 @@ target/
 /.nb-gradle/
 build/
 !**/src/main/**/build/
-!**/src/test/**
-
+!**/src/test/**/build/
+src/test
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
 .DS_Store
+/.idea/
+/gpt_logs/
